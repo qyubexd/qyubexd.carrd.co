@@ -1,0 +1,19 @@
+{
+  "name": "qyubexd.carrd.co",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "pixi.js": "^8.22.0",
+    "untitled-pixi-live2d-engine": "^1.4.0"
+  }
+}

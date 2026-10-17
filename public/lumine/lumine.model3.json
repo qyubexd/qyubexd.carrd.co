@@ -1,0 +1,61 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "lumine.moc3",
+		"Textures": [
+			"lumine.8192/texture_00.png"
+		],
+		"Pose": "",
+		"Physics": "lumine.physics3.json",
+		"DisplayInfo": "lumine.cdi3.json",
+		
+		"Expressions": [
+	        { "Name": "collar_blue",      "File": "mothion/collar_blue.exp3.json" },
+	        { "Name": "collar_green",     "File": "mothion/collar_green.exp3.json" },
+	        { "Name": "collar_lightblue", "File": "mothion/collar_lightblue.exp3.json" },
+	        { "Name": "collar_mintgreen", "File": "mothion/collar_mintgreen.exp3.json" },
+	        { "Name": "collar_orange",    "File": "mothion/collar_orange.exp3.json" },
+	        { "Name": "collar_purple",    "File": "mothion/collar_purple.exp3.json" },
+	        { "Name": "collar_red",       "File": "mothion/collar_red.exp3.json" },
+	        { "Name": "collar_white",     "File": "mothion/collar_white.exp3.json" },
+	        { "Name": "angry",            "File": "mothion/exp_angry.exp3.json" },
+	        { "Name": "blush",            "File": "mothion/exp_blush.exp3.json" },
+	        { "Name": "dizzy",            "File": "mothion/exp_dizzy.exp3.json" },
+	        { "Name": "heart",            "File": "mothion/exp_heart.exp3.json" },
+	        { "Name": "sad",              "File": "mothion/exp_sad.exp3.json" },
+	        { "Name": "sparkling",        "File": "mothion/exp_sparkling.exp3.json" },
+	        { "Name": "sweat",            "File": "mothion/exp_sweat.exp3.json" },
+	        { "Name": "tear",             "File": "mothion/exp_tear.exp3.json" },
+	        { "Name": "zitome",           "File": "mothion/exp_zitome.exp3.json" },
+	        { "Name": "X_change",         "File": "mothion/X_change.exp3.json" },
+	        { "Name": "Z_change",         "File": "mothion/Z_change.exp3.json" }
+	    ]
+	},
+	"HitAreas": [],
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthForm",
+				"ParamMouthOpenY",
+				"ParamMouthX",
+				"ParamtongueOut",
+				"ParamMouthFunnel",
+				"ParamMouthShrug",
+				"ParamMouthPuckerWiden",
+				"ParamJawOpen",
+				"ParamCheekPuffR",
+				"ParamCheekPuffL"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	]
+}
