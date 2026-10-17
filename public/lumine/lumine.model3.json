@@ -3,7 +3,7 @@
 	"FileReferences": {
 		"Moc": "lumine.moc3",
 		"Textures": [
-			"lumine.8192/texture_00.png"
+			"lumine.8192/texture_00.webp"
 		],
 		"Pose": "",
 		"Physics": "lumine.physics3.json",
