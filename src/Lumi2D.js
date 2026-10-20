@@ -64,3 +64,13 @@ window.addEventListener('pointermove', (event) => {
         model.focus(event.clientX, event.clientY);
     }
 });
+
+const targetExpressions = ["zitome", "sparkling", "heart", "blush"];
+
+setInterval(() => {
+    const randomIndex = Math.floor(Math.random() * targetExpressions.length);
+    const selectedExpression = targetExpressions[randomIndex];
+    if (model && typeof model.expression === 'function') {
+        model.expression(selectedExpression);
+    }
+}, 5000);
