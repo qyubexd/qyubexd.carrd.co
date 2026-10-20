@@ -257,7 +257,6 @@ unloaded-script {
   min-height: var(--viewport-height);
   overflow: hidden;
   position: relative;
-  z-index: 2;
 }
 .site-main {
   --alignment: var(--site-language-alignment);
@@ -278,7 +277,6 @@ unloaded-script {
   max-width: 100%;
   position: relative;
   text-align: var(--alignment);
-  z-index: 1;
 }
 .site-main > .inner {
   --padding-horizontal: 3rem;
@@ -290,7 +288,6 @@ unloaded-script {
   max-width: 100%;
   position: relative;
   width: var(--width);
-  z-index: 1;
   padding: var(--padding-vertical) var(--padding-horizontal);
 }
 .site-main > .inner > * {
@@ -2440,9 +2437,12 @@ body.is-instant::after {
   }
 }
 
-#gallery03 {
+#gallery03,
+.card-scroller,
+#container09,
+#container10 {
   position: relative;
-  z-index: 9999;       
+  z-index: 10;
 }
 
 .card-scroller {
@@ -2466,3 +2466,4 @@ body.is-instant::after {
   flex: 0 0 min(380px, 82vw);       /* card width, change 380px to what you want */
   scroll-snap-align: start;
 }
+

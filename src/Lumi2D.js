@@ -20,7 +20,7 @@ const canvas = app.canvas;
 canvas.style.position = 'fixed';
 canvas.style.right = '0px';
 canvas.style.bottom = '0px';
-canvas.style.zIndex = '10';
+canvas.style.zIndex = '5';
 canvas.style.pointerEvents = 'none';
 document.body.appendChild(canvas);
 
