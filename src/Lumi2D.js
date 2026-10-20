@@ -33,10 +33,8 @@ window.model = model
 app.stage.addChild(model);
 model.anchor.set(0.5);
 
-let scale = Math.min(
-    app.screen.width / model.width,
-    app.screen.height / model.height
-) * 1.2;
+let baseModelWidth = model.width;
+let baseModelHeight = model.height;
 
 function setModelTransform(x, y, scale) {
     model.x = x;
@@ -44,8 +42,25 @@ function setModelTransform(x, y, scale) {
     model.scale.set(scale);
 }
 
-setModelTransform(
-    app.screen.width / 1.3,
-    app.screen.height / 3,
-    scale
-)
+function updateLayout() {
+    const scale = Math.min(
+        app.screen.width / baseModelWidth,
+        app.screen.height / baseModelHeight
+    ) * 1.2;
+
+    setModelTransform(
+        app.screen.width / 1.3,
+        app.screen.height / 3,
+        scale
+    );
+}
+
+updateLayout()
+setInterval(updateLayout, 100)
+model.focus(0, 4000);
+
+window.addEventListener('pointermove', (event) => {
+    if (typeof model.focus === 'function') {
+        model.focus(event.clientX, event.clientY);
+    }
+});

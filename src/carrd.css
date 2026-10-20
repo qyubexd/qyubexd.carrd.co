@@ -1230,7 +1230,8 @@ body.is-instant::after {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.buttons-component.style-2 > li > a {
+.buttons-component.style-2 > li > a,
+.buttons-component.style-2 > li > span {
   display: inline-block;
   width: auto;
   height: auto;
@@ -1253,6 +1254,10 @@ body.is-instant::after {
   text-align: var(--alignment);
   background-color: #9d7cc3;
   color: #ffffff;
+  cursor: default;
+  user-select: none;
+}
+.buttons-component.style-2 > li > a {
   transition:
     transform 0.25s ease,
     color 0.25s ease,
@@ -2265,7 +2270,8 @@ body.is-instant::after {
   .buttons-component.style-2 {
     gap: 0.375rem;
   }
-  .buttons-component.style-2 > li > a {
+  .buttons-component.style-2 > li > a,
+  .buttons-component.style-2 > li > span {
     letter-spacing: 0.025rem;
     padding-left: calc(0.025rem + 0.5rem);
     font-size: 0.625em;
